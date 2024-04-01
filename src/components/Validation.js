@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-    <div className="contactHeader">
+    <div className="contactHeader" id="contactHeader">
       <h5>CONTACT</h5>
       <h1>Contact With Me</h1>
     </div>
