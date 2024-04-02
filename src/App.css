@@ -253,7 +253,7 @@ h4 {
 @media (max-width: 1005px) {
   .home {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0 22px;
   }
 }
