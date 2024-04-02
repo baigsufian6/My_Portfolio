@@ -8,6 +8,7 @@ function Home() {
     
       <section className="home" id="home">
 <div className="home-content">
+  <div class='cover'>
   <h5>WELCOME TO MY WORLD</h5>
   <h2>
     Hi, I'am <span>Sufian Baig</span>
@@ -15,6 +16,7 @@ function Home() {
   <h3>
     <span>a</span> Professional Developer
   </h3>
+  </div>
   <p>
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
     officia esse atque voluptas dolorum similique illum tempora natus

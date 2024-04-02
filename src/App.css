@@ -780,4 +780,10 @@ a:hover {
   color: #3c3e41;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=App.css.map */
