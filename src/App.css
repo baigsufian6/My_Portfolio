@@ -118,16 +118,16 @@ header a {
   text-align: justify;
 }
 .home-content h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 .home-content h3 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin: 0px;
   display: flex;
 }
 .home-content h5 {
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #3c3e41;
   margin-top: 0;
   margin-bottom: 8px;
