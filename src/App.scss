@@ -154,11 +154,11 @@ header a {
     margin-top: 30px;
     text-align: justify;
     h2 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 10px;
     }
     h3 {
-      font-size: 3.2rem;
+      font-size: 3rem;
       margin: 0px;
     }
     h5 {
@@ -266,7 +266,7 @@ h4 {
 @media (max-width: 1005px) {
   .home {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin:0 22px
   }
 }

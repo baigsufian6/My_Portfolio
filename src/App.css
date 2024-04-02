@@ -141,11 +141,11 @@ header a {
     text-align: justify;
   }
   .home-content h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 10px;
   }
   .home-content h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin: 0px;
   }
   .home-content h5 {
@@ -253,7 +253,7 @@ h4 {
 @media (max-width: 1005px) {
   .home {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 0 22px;
   }
 }
