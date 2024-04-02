@@ -137,6 +137,7 @@ header a {
   h3 {
     font-size: 3.2rem;
     margin: 0px;
+    display: flex;
   }
   h5 {
     font-size: 15px;
@@ -149,8 +150,8 @@ header a {
 @media (max-width: 750px) {
   .home-content {
     max-width: 800px;
-    margin: 30px auto;
-    margin-top: 20px;
+    margin: 30px ;
+    margin-top: 48px;
     text-align: justify;
     h2 {
       font-size: 2.2rem;
@@ -180,8 +181,6 @@ header a {
 
 span {
   color: #ff014f;
-  align-items: center;
-  font-size: 39px;
 }
 
 .home-img img {
@@ -268,6 +267,7 @@ h4 {
   .home {
     display: flex;
     flex-direction: column;
+    margin:0 22px
   }
 }
 
