@@ -403,7 +403,7 @@ div.icons {
   border: 0px;
 }
 .portfolio-content img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   border-radius: 10%;
 }
 .portfolio-content p {
