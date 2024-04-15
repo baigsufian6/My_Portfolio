@@ -14,7 +14,7 @@ function Portfolio() {
           <h2 className="big">My Portfolio</h2>
           <div className="portfolio-content">
             <div className="portfolio-box">
-              <div>
+              <div className='portImg'>
                 <img src={portfolio01} alt="img no" />
               </div>
               <div className="portfoliolayer">
@@ -23,35 +23,45 @@ function Portfolio() {
               </div>
             </div>
             <div className="portfolio-box">
+              <div className='portImg'>
               <img src={portfolio02} alt="img no" />
+              </div>
               <div className="portfoliolayer">
                 <h5>WEB DEVELOPMENT</h5>
                 <p>The service provide for design</p>
               </div>
             </div>
             <div className="portfolio-box">
+            <div className='portImg'>
               <img src={portfolio03} alt="img no" />
+              </div>
               <div className="portfoliolayer">
                 <h5>WEB DEVELOPMENT</h5>
                 <p>The service provide for design</p>
               </div>
             </div>
             <div className="portfolio-box">
+            <div className='portImg'>
               <img src={portfolio04} alt="img no" />
+              </div>
               <div className="portfoliolayer">
                 <h5>WEB DEVELOPMENT</h5>
                 <p>The service provide for design</p>
               </div>
             </div>
             <div className="portfolio-box">
+            <div className='portImg'>
               <img src={portfolio05} alt="img no" />
+              </div>
               <div className="portfoliolayer">
                 <h5>WEB DEVELOPMENT</h5>
                 <p>The service provide for design</p>
               </div>
             </div>
             <div className="portfolio-box">
+            <div className='portImg'>
               <img src={portfolio06} alt="img no" />
+              </div>
               <div className="portfoliolayer">
                 <h5>WEB DEVELOPMENT</h5>
                 <p>The service provide for design</p>

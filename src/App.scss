@@ -406,15 +406,26 @@ div.icons {
     border-radius: 5%;
     transition: 0.8s ease;
     position: relative;
+    padding: 30px;
+  }
+
+  .portImg{
+    overflow: hidden;
+    border-radius: 5%;
   }
 
   img {
-    width: 80%;
+    width: 100%;
     object-fit: cover;
     height: auto;
     border-radius: 5%;
-    transition: 0.5s all ease-in-out;
+    transition: 0.5s  ease-in-out;
     border: 0px;
+
+    &:hover{
+    transform: scale(1.05);
+    border-radius: 10%;
+    }
   }
   p {
     font-weight: 600;
@@ -432,9 +443,6 @@ div.icons {
     margin-top: 10px;
   }
 
-  .portfolio-box:hover img {
-    transform: scale(1.06);
-  }
 }
 
 @media (max-width: 600px) {
@@ -773,7 +781,7 @@ a:hover {
 .form {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 650px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 15px;
@@ -870,7 +878,7 @@ a:hover {
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 60px;
     color: #3c3e41;
     font-weight: 700;
     line-height: 1.2;
@@ -895,3 +903,91 @@ a:hover {
   height: 18rem;
   border-radius: 5px;
 }
+
+.fullBody{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex: 1 1;
+  margin: 0 10rem;
+}
+
+.formLeft{
+  margin-top: 3rem;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  box-shadow: $inner-shadow;
+  box-shadow: $shadiow2;
+  box-shadow: $shadow1;
+  box-shadow: $shadow-white;
+  box-shadow: $gradientshadow;
+  border-radius: 15px;
+  height: 49rem;
+  width: 32rem;
+ 
+
+  h3{
+    font-size: 18px;
+    display: flex;
+    color: $gray-color;
+
+  }
+  h2{
+    font-size: 29px;
+    color: $text-color;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+.imgClass{
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+img{
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+
+  &:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+  }
+  
+}
+
+.second{
+  margin-bottom: 20px;
+}
+.third{
+  margin-bottom: 20px;
+}
+.fourth{
+  margin-bottom: 30px;
+}
+
+@media ( max-width:1349px){
+  .fullBody{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+  }
+  .formLeft{
+    margin: auto;
+  }
+ 
+}
+@media( max-width:650px){
+  .formLeft{
+    width: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+
+

@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import contact1 from '../images/contact1.png';
 
 function App() {
   const schema = z.object({
@@ -25,10 +26,12 @@ function App() {
 
   return (
     <>
-      <div className="contactHeader" id="contactHeader">
+     <div className="contactHeader" id="contactHeader">
         <h5>CONTACT</h5>
         <h1>Contact With Me</h1>
       </div>
+    <div className="fullBody">
+    <div className="formRight">
       <div className="valid">
         <form className="form" onSubmit={handleSubmit(submitData)}>
           <div className="shortBox">
@@ -63,6 +66,36 @@ function App() {
 
           <input type="submit" />
         </form>
+      </div>
+      </div>
+
+
+      <div className="formLeft">
+            <div className="imgClass">
+              <img src={contact1} alt="np img"></img>
+            </div>
+            <div className="formLeftContent">
+              <h2 >Sufian Baig</h2>
+              <h3 className="second">Chief Operating Officer</h3>
+              <h3>I am available for freelance work. Connect</h3>
+              <h3 className="third"> with me via and call in to my account.</h3>
+              <h3>Phone: +01234567890</h3>
+              <h3 className="fourth">Email: admin@example.com</h3>
+              <div className="social-icons">
+            <h4 id="line1">FIND ME</h4>
+            <a href="/" className="">
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a href="/" className="">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a href="/" className="">
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+            </div>
+
+      </div>
       </div>
     </>
   );
