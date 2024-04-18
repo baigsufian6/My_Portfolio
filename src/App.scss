@@ -691,7 +691,7 @@ a:hover {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1166px) {
   .boss {
     display: flex;
     flex-wrap: wrap;
@@ -844,7 +844,7 @@ a:hover {
   margin-left: 27px;
   width: 16.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .form {
     width: 300px;
   }
@@ -979,6 +979,7 @@ img{
   }
   .formLeft{
     margin: auto;
+    width: 650px;
   }
  
 }
