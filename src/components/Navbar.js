@@ -1,86 +1,93 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
   const [navHidden, setNavHidden] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const [title, setTitle] = useState("Suff's Portfolio");
 
   const handleMenuClick = () => {
     setMenuActive(!menuActive);
     setNavHidden(!navHidden);
   };
 
-  const handleScroll = () => {
-    setNavHidden(true);
-
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("header nav a");
-
-    sections.forEach((sec) => {
-      const top = window.scrollY;
-      const offset = sec.offsetTop;
-      const height = sec.offsetHeight;
-      const id = sec.getAttribute("id");
-
-      if (top >= offset && top < offset + height) {
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-        });
-        document
-          .querySelector(`header nav a[href*=${id}]`)
-          ?.classList.add("active");
-      }
-    });
-
-    const header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 100);
-
-    setMenuActive(false);
-    setNavHidden(false);
+  const handleTitleChange = (newTitle) => {
+    setTitle(newTitle);
+    document.title = newTitle;
   };
 
   return (
     <div>
       <header className="header">
-        <a href="/" className="logo">
+        <a href="/" className="logo" onClick={() => handleTitleChange("HOME")}>
           HOME
         </a>
-
-        <i className={`fa ${menuActive ? 'fa-times' : 'fa-bars'}`} id="menu-icon" onClick={handleMenuClick}></i>
-
+        <i
+          className={`fa ${menuActive ? 'fa-times' : 'fa-bars'}`}
+          id="menu-icon"
+          onClick={handleMenuClick}
+        ></i>
         <nav className={`navbar ${menuActive ? 'active' : ''}`}>
-          <a href="#home" className="active">
+          <a
+            href="#home"
+            className="active"
+            onClick={() => handleTitleChange("HOME")}
+          >
             HOME
           </a>
-          <a href="#features" className="#features">
+          <a
+            href="#features"
+            className="#features"
+            onClick={() => handleTitleChange("FEATURES")}
+          >
             FEATURES
           </a>
-          <a href="#portfolio" className="">
+          <a
+            href="#portfolio"
+            className=""
+            onClick={() => handleTitleChange("PORTFOLIO")}
+          >
             PORTFOLIO
           </a>
-          <a href="#resume" className="">
+          <a
+            href="#resume"
+            className=""
+            onClick={() => handleTitleChange("RESUME")}
+          >
             RESUME
           </a>
-          <a href="#contactHeader" className="">
+          <a
+            href="#contactHeader"
+            className=""
+            onClick={() => handleTitleChange("VALIDATION FORM")}
+          >
             VALIDATION FORM
           </a>
-          <Link to="/textutils">
+          <Link
+            to="/textutils"
+            onClick={() => handleTitleChange("TEXT-UTILS")}
+          >
             TEXT-UTILS
           </Link>
-          <a href="#blog" className="">
+          <a
+            href="#blog"
+            className=""
+            onClick={() => handleTitleChange("BLOG")}
+          >
             BLOG
           </a>
-          <a href="#contact" className="">
+          <a
+            href="#contact"
+            className=""
+            onClick={() => handleTitleChange("CONTACT")}
+          >
             CONTACT
           </a>
-          <a href="#buynow" id="cont">
+          <a
+            href="#buynow"
+            id="cont"
+            onClick={() => handleTitleChange("BUY NOW")}
+          >
             BUY NOW
           </a>
         </nav>
