@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
   const [navHidden, setNavHidden] = useState(false);
   const [title, setTitle] = useState("Suff's Portfolio");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setNavHidden(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Check the initial viewport size
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleMenuClick = () => {
     setMenuActive(!menuActive);
@@ -14,6 +27,8 @@ const Navbar = () => {
   const handleTitleChange = (newTitle) => {
     setTitle(newTitle);
     document.title = newTitle;
+    setMenuActive(false);
+    setNavHidden(true); 
   };
 
   return (
@@ -27,7 +42,7 @@ const Navbar = () => {
           id="menu-icon"
           onClick={handleMenuClick}
         ></i>
-        <nav className={`navbar ${menuActive ? 'active' : ''}`}>
+        <nav className={`navbar ${menuActive ? 'active' : ''} ${navHidden ? 'hidden' : ''}`}>
           <a
             href="#home"
             className="active"
