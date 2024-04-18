@@ -256,8 +256,7 @@ span {
 }
 .icons .social-icons a:hover,
 .icons .bestskill-icons a:hover {
-  background-color: #ff014f;
-  transition: 0.8s;
+  color: #ff014f;
 }
 
 h4 {
