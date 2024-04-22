@@ -968,7 +968,7 @@ img:hover {
 @media (max-width: 1349px) {
   .fullBody {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0;
     justify-content: center;
   }
