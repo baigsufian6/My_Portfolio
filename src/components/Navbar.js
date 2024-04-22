@@ -91,13 +91,13 @@ const Navbar = () => {
           >
             CONTACT
           </Link>
-          <Link
-            to="/buynow"
+          <a
+            href="#buynow"
             id="cont"
             onClick={() => handleTitleChange("BUY NOW")}
           >
-            BUY NOW
-          </Link>
+            My Portfolio 😊👍
+          </a>
         </nav>
       </header>
     </div>

@@ -25,6 +25,9 @@ header a {
   text-decoration: none;
   color: #3c3e41;
 }
+header a:hover {
+  color: #ff014f;
+}
 
 a.logo {
   order: 1;
@@ -42,10 +45,16 @@ a.logo {
 .navbar {
   display: flex;
 }
+.navbar:hover {
+  color: #ff014f;
+}
 
 .navbar a {
   margin-right: 20px;
   color: #3c3e41;
+}
+.navbar a:hover {
+  color: #ff014f;
 }
 
 #menu-icon {
@@ -90,6 +99,9 @@ a.logo {
   font-weight: 700;
   color: #3c3e41;
   margin: 16px;
+}
+.navbar a:hover {
+  color: #ff014f;
 }
 .navbar a:hover,
 .navbar :active {
