@@ -28,7 +28,7 @@ export default function Projects() {
               </a>
               </div>
               <div className="portfoliolayer">
-                <h5>Machine Learning</h5>
+                <h5>MACHINE LEARNING</h5>
                 <p>Online Cab Trip Analysis</p>
               </div>
             </div>
