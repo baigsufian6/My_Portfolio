@@ -1,5 +1,5 @@
 import React from "react";
-import myPic1 from "../images/myPic1.jpg";
+import myImg from "../images/myImg.png";
 
 function Home() {
   return (
@@ -49,7 +49,7 @@ function Home() {
       </div>
 
       <div className="home-img">
-        <img src={myPic1} alt="no img" />
+        <img src={myImg} alt="no img" />
       </div>
       <hr />
     </section>
