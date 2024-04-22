@@ -44,67 +44,60 @@ const Navbar = () => {
         ></i>
         <nav className={`navbar ${menuActive ? 'active' : ''} ${navHidden ? 'hidden' : ''}`}>
           <a
-            href="#home"
+            href="/"
             className="active"
             onClick={() => handleTitleChange("HOME")}
           >
             HOME
           </a>
-          <a
-            href="#features"
+          <Link
+            to="/features"
             className="#features"
             onClick={() => handleTitleChange("FEATURES")}
           >
             FEATURES
-          </a>
-          <a
-            href="#portfolio"
+          </Link>
+          <Link
+            to="/portfolio"
             className=""
             onClick={() => handleTitleChange("PORTFOLIO")}
           >
             PORTFOLIO
-          </a>
-          <a
-            href="#resume"
+          </Link>
+          <Link
+            to="/resume"
             className=""
             onClick={() => handleTitleChange("RESUME")}
           >
             RESUME
-          </a>
-          <a
-            href="#contactHeader"
-            className=""
-            onClick={() => handleTitleChange("VALIDATION FORM")}
-          >
-            VALIDATION FORM
-          </a>
+          </Link>
           <Link
             to="/textutils"
             onClick={() => handleTitleChange("TEXT-UTILS")}
           >
             TEXT-UTILS
           </Link>
-          <a
-            href="#blog"
+          <Link
+            to="/projects"
             className=""
-            onClick={() => handleTitleChange("BLOG")}
+            onClick={() => handleTitleChange("PROJECTS")}
           >
-            BLOG
-          </a>
-          <a
-            href="#contact"
+            PROJECTS
+          </Link>
+          <Link
+            to="/contactHeader"
             className=""
             onClick={() => handleTitleChange("CONTACT")}
           >
             CONTACT
-          </a>
-          <a
-            href="#buynow"
+          </Link>
+          <Link
+            to="/buynow"
             id="cont"
             onClick={() => handleTitleChange("BUY NOW")}
           >
             BUY NOW
-          </a>
+          </Link>
         </nav>
       </header>
     </div>

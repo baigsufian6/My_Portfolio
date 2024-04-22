@@ -39,29 +39,29 @@ function App() {
               <label> First Name </label>
               <input type="text" {...register("firstName")} />
               {errors.firstName && (
-                <span className="errors">{errors.firstName.message}</span>
+                <span className="errors">Please Enter First Name</span>
               )}
             </div>
             <div className="fixTrial2">
               <label> Last Name </label>
               <input type="text" {...register("lastName")} />
               {errors.lastName && (
-                <span className="errors">{errors.lastName.message}</span>
+                <span className="errors">Please Enter Last Name</span>
               )}
             </div>
           </div>
           <label> Email </label>
           <input type="email" {...register("email")} />
           {errors.email && (
-            <span className="errors">{errors.email.message}</span>
+            <span className="errors">Please Enter Valid Email</span>
           )}
           <label> Age </label>
           <input type="number" {...register("age", { valueAsNumber: true })} />
-          {errors.age && <span className="errors">{errors.age.message}</span>}
+          {errors.age && <span className="errors">Please Enter Age</span>}
           <label> Message </label>
           <textarea className="messages" type="text" {...register("message")} />
           {errors.message && (
-            <span className="errors">{errors.message.message}</span>
+            <span className="errors">Please Enter Message</span>
           )}
 
           <input type="submit" />

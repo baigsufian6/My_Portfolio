@@ -23,13 +23,13 @@ function Home() {
         <div className="icons">
           <div className="social-icons">
             <h4 id="line1">FIND ME</h4>
-            <a href="/" className="">
+            <a href="https://www.facebook.com/" className="">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="/" className="">
+            <a href="https://www.instagram.com/baigsufian06/" className="">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="/" className="">
+            <a href="https://www.linkedin.com/in/sufian-baig-242360191/" className="">
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
           </div>

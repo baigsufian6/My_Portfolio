@@ -221,11 +221,11 @@ span {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: 0.2rem;
   border-radius: 20%;
-  font-size: 2rem;
+  font-size: 26px;
   list-style: none;
   padding: 0;
   float: left;
@@ -244,11 +244,11 @@ span {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: 0.2rem;
   border-radius: 20%;
-  font-size: 2rem;
+  font-size: 26px;
   list-style: none;
   padding: 0;
   margin: 5px;
@@ -275,6 +275,7 @@ span {
 }
 h4 {
   color: $gray-color;
+  font-size: 20px;
 }
 
 @media (max-width: 1005px) {
@@ -289,17 +290,27 @@ h4 {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 30px 60px;
+  margin: 100px 60px;
 
   .smell {
     font-size: 14px;
     color: #ff014f;
     margin: 0 0 0 33px;
+    align-self: center;
+    letter-spacing: 2px;
+    display: block;
+    line-height: 14px;
+    font-weight: 500;
   }
   .horse {
-    font-size: 40px;
+    font-size: 60px;
     color: $gray-color;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 15px;
     margin: 0 0 0 33px;
+    align-self: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -326,6 +337,13 @@ h4 {
 
   .features-box:hover {
     background-color: #ff014f;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .features .horse {
+     font-size: 35px;
   }
 }
 
@@ -573,13 +591,13 @@ a:hover {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 30px 13px;
+    margin: 80px 13px;
   }
   .portfolio {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 0px 22px;
+    margin: 80px 22px;
     padding-top: 21px;
   }
   .navbar2 .professional-skills {
@@ -779,13 +797,19 @@ a:hover {
 }
 
 .form {
+  background-color: $bg-color;
   display: flex;
   flex-direction: column;
   width: 600px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: $bg-color;
   border-radius: 15px;
   margin-bottom: 50px;
+  box-shadow: $inner-shadow;
+  box-shadow: $shadiow2;
+  box-shadow: $shadow1;
+  box-shadow: $shadow-white;
+  box-shadow: $gradientshadow;
 }
 
 .form label {
@@ -803,13 +827,14 @@ a:hover {
 
 .form input[type="submit"] {
   background-color: #007bff;
-  color: #fff;
+  
+ 
   border: none;
   border-radius: 5px;
   padding: 20px 15px;
   cursor: pointer;
 }
-
+// ecf0f3 ecf0f3
 .form input[type="submit"]:hover {
   background-color: #0056b3;
 }
@@ -846,7 +871,13 @@ a:hover {
 }
 @media (max-width: 650px) {
   .form {
+    background-color: $bg-color;
     width: 300px;
+    box-shadow: $inner-shadow;
+    box-shadow: $shadiow2;
+    box-shadow: $shadow1;
+    box-shadow: $shadow-white;
+    box-shadow: $gradientshadow;
   }
   .fixTrial {
     width: 16rem;
@@ -913,6 +944,7 @@ a:hover {
 }
 
 .formLeft{
+  background-color: $bg-color;
   margin-top: 3rem;
   gap: 10px;
   display: flex;
@@ -926,6 +958,14 @@ a:hover {
   border-radius: 15px;
   height: 49rem;
   width: 32rem;
+
+  .formRight{
+    box-shadow: $inner-shadow;
+    box-shadow: $shadiow2;
+    box-shadow: $shadow1;
+    box-shadow: $shadow-white;
+    box-shadow: $gradientshadow;
+  }
  
 
   h3{
@@ -978,6 +1018,7 @@ img{
     justify-content: center;
   }
   .formLeft{
+    background-color: $bg-color;
     margin: auto;
     width: 600px;
   }
