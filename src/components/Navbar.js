@@ -92,7 +92,7 @@ const Navbar = () => {
             CONTACT
           </Link>
           <a
-            href="#buynow"
+            href="#my-portfolio"
             id="cont"
             onClick={() => handleTitleChange("BUY NOW")}
           >
