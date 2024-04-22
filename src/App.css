@@ -280,7 +280,7 @@ h4 {
   .home {
     display: flex;
     flex-direction: column;
-    margin: 0 22px;
+    margin: 10px 22px;
   }
 }
 .features {
@@ -943,10 +943,10 @@ a:hover {
 }
 
 img {
-  width: 100%;
+  width: 45px;
   height: auto;
-  transition: 0.5s ease-in-out;
-  border-radius: 10px;
+  transition: 0.1s ease-in-out;
+  border-radius: 2rem;
 }
 img:hover {
   transform: scale(1.1);

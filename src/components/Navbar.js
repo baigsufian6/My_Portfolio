@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import trual1 from '../images/trual1.png'
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -34,8 +35,8 @@ const Navbar = () => {
   return (
     <div>
       <header className="header">
-        <a href="/" className="logo" onClick={() => handleTitleChange("HOME")}>
-          HOME
+        <a href="/"  className="logo" onClick={() => handleTitleChange("HOME")}>
+          <img src={trual1} alt='no img'></img>
         </a>
         <i
           className={`fa ${menuActive ? 'fa-times' : 'fa-bars'}`}
