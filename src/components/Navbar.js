@@ -96,7 +96,7 @@ const Navbar = () => {
             id="cont"
             onClick={() => handleTitleChange("BUY NOW")}
           >
-            My Portfolio 😊👍
+            Suffs's Portfolio 😊👍
           </a>
         </nav>
       </header>
