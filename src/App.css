@@ -42,6 +42,17 @@ a.logo {
   margin-top: 17px;
 }
 
+img {
+  width: 45px;
+  height: auto;
+  transition: 0.1s ease-in-out;
+  border-radius: 2rem;
+}
+img:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
 .navbar {
   display: flex;
 }
@@ -942,13 +953,13 @@ a:hover {
   border-radius: 10px;
 }
 
-img {
-  width: 45px;
+.formImg {
+  width: 100%;
   height: auto;
   transition: 0.1s ease-in-out;
   border-radius: 2rem;
 }
-img:hover {
+.formImg:hover {
   transform: scale(1.1);
   border-radius: 10px;
 }

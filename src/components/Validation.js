@@ -72,7 +72,7 @@ function App() {
 
       <div className="formLeft">
             <div className="imgClass">
-              <img src={contact1} alt="np img"></img>
+              <img className="formImg" src={contact1} alt="np img"></img>
             </div>
             <div className="formLeftContent">
               <h2 >Sufian Baig</h2>
