@@ -36,7 +36,7 @@ const Navbar = () => {
     <div>
       <header className="header">
         <a href="/"  className="logo" onClick={() => handleTitleChange("HOME")}>
-          <img src={trual1} alt='no img'></img>
+          <img className='ninjaIcon' src={trual1} alt='no img'></img>
         </a>
         <i
           className={`fa ${menuActive ? 'fa-times' : 'fa-bars'}`}
@@ -97,7 +97,7 @@ const Navbar = () => {
             id="cont"
             onClick={() => handleTitleChange("BUY NOW")}
           >
-            Suffs's Portfolio 😊👍
+            SUFIAN BAIG 😊👍
           </a>
         </nav>
       </header>

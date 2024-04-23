@@ -50,11 +50,13 @@ a.logo {
   margin-top: 17px;
 }
 
-img{
+.ninjaIcon{
   width: 45px;
   height: auto;
   transition: 0.1s ease-in-out;
   border-radius: 2rem;
+  border: 2px solid red;
+  background-color: black;
 
   &:hover{
     transform: scale(1.1);
@@ -1107,3 +1109,31 @@ color: white;
   }
 }
 
+.footerMain{
+  margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.ninjaIcon2{
+  width: 65px;
+  height: auto;
+  transition: 0.1s ease-in-out;
+  border-radius: 2rem;
+  border: 3px solid red;
+  background-color: black;
+}
+
+
+@media(max-width:500px){
+  .footerMain{
+    h5{
+    font-size: 14px;
+  }
+}
+}
