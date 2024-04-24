@@ -14,10 +14,7 @@ function Home() {
             <h3>Professional Developer</h3>
           </div>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
-            officia esse atque voluptas dolorum similique illum tempora natus
-            sint voluptatibus quia voluptates omnis illo, at, commodi temporibus
-            alias aspernatur! Incidunt?
+          In the world of cutting-edge development, code is the engine driving innovation forward. With every line written, a new realm of possibilities unfolds, inspiring others to reach new heights in the ever-evolving landscape of technology.
           </p>
         </div>
         <div className="icons">

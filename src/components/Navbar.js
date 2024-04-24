@@ -61,9 +61,9 @@ const Navbar = () => {
           <Link
             to="/portfolio"
             className=""
-            onClick={() => handleTitleChange("PORTFOLIO")}
+            onClick={() => handleTitleChange("PROJECTS")}
           >
-            PORTFOLIO
+            PROJECTS
           </Link>
           <Link
             to="/resume"
@@ -77,13 +77,6 @@ const Navbar = () => {
             onClick={() => handleTitleChange("TEXT-UTILS")}
           >
             TEXT-UTILS
-          </Link>
-          <Link
-            to="/projects"
-            className=""
-            onClick={() => handleTitleChange("PROJECTS")}
-          >
-            PROJECTS
           </Link>
           <Link
             to="/contactHeader"

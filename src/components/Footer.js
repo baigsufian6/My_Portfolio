@@ -4,7 +4,7 @@ import trual1 from '../images/trual1.png'
 export default function Footer() {
   return (
     <div>
-        <hr></hr>
+        <hr className='endLine'></hr>
         <div className='footerMain'>
       <img className='ninjaIcon2' src={trual1} alt='no img'></img>
       <h3>SUFI STUDIO</h3>

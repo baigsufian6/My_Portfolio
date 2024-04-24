@@ -6,7 +6,6 @@ import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Textform from './components/Textform';
 import Validation from './components/Validation';
-import Projects from './components/Projects';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from './components/Footer';
 
@@ -23,7 +22,6 @@ function App() {
               <Features />
               <Portfolio />
               <Resume />
-              <Projects />
               <Validation />
             </>
           }
@@ -31,7 +29,6 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
         <Route path="/textutils" element={<Textform />} />
         <Route path="/contactHeader" element={<Validation />} />
 

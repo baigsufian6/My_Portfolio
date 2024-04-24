@@ -79,8 +79,8 @@ function App() {
               <h3 className="second">Chief Operating Officer</h3>
               <h3>I am available for freelance work. Connect</h3>
               <h3 className="third"> with me via and call in to my account.</h3>
-              <h3>Phone: +01234567890</h3>
-              <h3 className="fourth">Email: admin@example.com</h3>
+              <h3>Phone: +91 9741039826</h3>
+              <h3 className="fourth">Email: baigsufian6@gmail.com</h3>
               <div className="social-icons">
             <h4 id="line1">FIND ME</h4>
             <a href="/" className="">
