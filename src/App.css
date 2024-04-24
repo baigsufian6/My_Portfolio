@@ -582,7 +582,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 66px 13px;
+    margin: 95px 13px 13px;
   }
   .portfolio {
     display: flex;
