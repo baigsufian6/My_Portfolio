@@ -145,7 +145,7 @@ function Resume() {
                 period in full-stack development, where I acquired valuable
                 skills in JavaScript, Node.js, React, Next.js, and other
                 essential technologies. This training equipped me with the
-                necessary knowledge and expertise to tackle complex web
+                necessary knowledge to tackle web
                 development projects effectively.
               </p>
             </div>
