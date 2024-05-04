@@ -1,7 +1,8 @@
 import React from "react";
 import myImg from "../images/myImg.png";
+import './Navbar.css'
 
-function Home() {
+function Home(props) {
   return (
     <section className="home" id="home">
       <div className="home-content">
@@ -14,7 +15,7 @@ function Home() {
             <h3>Professional Developer</h3>
           </div>
           <p>
-          In the world of cutting-edge development, code is the engine driving innovation forward. With every line written, a new realm of possibilities unfolds, inspiring others to reach new heights in the ever-evolving landscape of technology.
+            In the world of cutting-edge development, code is the engine driving innovation forward. With every line written, a new realm of possibilities unfolds, inspiring others to reach new heights in the ever-evolving landscape of technology.
           </p>
         </div>
         <div className="icons">
@@ -46,7 +47,13 @@ function Home() {
       </div>
 
       <div className="home-img">
-        <img src={myImg} alt="no img" />
+        <img
+          src={myImg}
+          alt="no img"
+          style={{
+            animation: props.isRotating ? "rotation 0.1s infinite linear" : "none",
+          }}
+        />
       </div>
       <hr />
     </section>

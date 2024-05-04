@@ -77,11 +77,7 @@ function Resume() {
               </div>
               <hr />
               <p>
-                Consistent academic excellence throughout school years,
-                comprehensive knowledge acquisition. Actively participated in
-                extracurricular activities, developed well-rounded personality.
-                Strong foundation in core subjects, exhibited intellectual
-                curiosity. Committed to personal growth, ethical values.
+                
               </p>
             </div>
           </div>

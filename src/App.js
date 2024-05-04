@@ -1,4 +1,5 @@
 import './App.css'
+import React, { useState } from 'react';
 import Features from './components/Features';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
@@ -10,15 +11,21 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from './components/Footer';
 
 function App() {
+  const [isRotating, setIsRotating] = useState(false);
+
+  const toggleRotation = () => {
+    setIsRotating(!isRotating);
+  };
+
   return (
     <Router>
-      <Navbar />
+      <Navbar toggleRotation={toggleRotation} />
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Home />
+              <Home isRotating={isRotating} />
               <Features />
               <Portfolio />
               <Resume />
@@ -31,8 +38,6 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/textutils" element={<Textform />} />
         <Route path="/contactHeader" element={<Validation />} />
-
-
       </Routes>
       <Footer />
     </Router>

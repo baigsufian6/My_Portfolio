@@ -1,0 +1,21 @@
+body {
+    background-color: transparent;
+    transition: background-color 0.1s ease;
+  }
+
+  .dont{
+    font-size: 5px;
+  }
+
+  .rotate {
+    animation: rotation 0.5s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

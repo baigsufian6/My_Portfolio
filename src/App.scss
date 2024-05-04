@@ -181,7 +181,7 @@ header a {
   .home-content {
     max-width: 800px;
     margin: 30px;
-    margin-top: 30px;
+    margin-top: 47px;
     text-align: justify;
     h2 {
       font-size: 1.8rem;
@@ -226,6 +226,7 @@ span {
   margin-top: 39px;
 }
 
+
 @media (max-width: 400px) {
   .home-img img {
     width: 19rem;
@@ -234,6 +235,18 @@ span {
     padding: 0 25px;
     border-radius: 121px;
     margin-top: 0px;
+  }
+}
+.rotate{
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }
 
@@ -321,7 +334,7 @@ h4 {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 100px 60px 40px;
+  margin: 120px 60px 40px;
 
   .smell {
     font-size: 14px;
@@ -410,7 +423,7 @@ div.icons {
   flex-direction: column;
   position: relative;
   margin: 0px 60px;
-  padding-top: 100px;
+  padding-top: 120px;
 
   .small {
     font-size: 14px;
@@ -517,7 +530,7 @@ div.icons {
   flex-direction: column;
   position: relative;
   margin: 0px 60px;
-  padding-top: 100px;
+  padding-top: 120px;
 
   .resexp {
     font-size: 14px;
@@ -930,7 +943,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 120px;
 
   h5 {
     color: #ff014f;

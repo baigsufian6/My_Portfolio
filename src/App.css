@@ -162,7 +162,7 @@ header a {
   .home-content {
     max-width: 800px;
     margin: 30px;
-    margin-top: 30px;
+    margin-top: 47px;
     text-align: justify;
   }
   .home-content h2 {
@@ -215,6 +215,18 @@ span {
     padding: 0 25px;
     border-radius: 121px;
     margin-top: 0px;
+  }
+}
+.rotate {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }
 @keyframes floatimage {
@@ -300,7 +312,7 @@ h4 {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 100px 60px 40px;
+  margin: 120px 60px 40px;
 }
 .features .smell {
   font-size: 14px;
@@ -383,7 +395,7 @@ div.icons {
   flex-direction: column;
   position: relative;
   margin: 0px 60px;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 .portfolio .small {
   font-size: 14px;
@@ -480,7 +492,7 @@ div.icons {
   flex-direction: column;
   position: relative;
   margin: 0px 60px;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 .resume .resexp {
   font-size: 14px;
@@ -874,7 +886,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .contactHeader h5 {
   color: #ff014f;
