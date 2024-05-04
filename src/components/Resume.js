@@ -61,7 +61,7 @@ function Resume() {
                 achievements. Consistent performance across diverse subjects,
                 cultivated strong foundation. Committed to maximizing potential,
                 driven by intellectual curiosity. Passionate about continuous
-                learning, growth mindse
+                learning, growth mindset
               </p>
             </div>
 
@@ -77,7 +77,11 @@ function Resume() {
               </div>
               <hr />
               <p>
-                
+              Excelled in pre-university coursework, outstanding academic
+                achievements. Consistent performance across diverse subjects,
+                cultivated strong foundation. Committed to maximizing potential,
+                driven by intellectual curiosity. Passionate about continuous
+                learning, growth mindse
               </p>
             </div>
           </div>
