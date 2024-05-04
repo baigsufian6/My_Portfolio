@@ -67,7 +67,7 @@ const Navbar = (props) => {
             alt="no img"
             onClick={startDiscoEffect}
           ></img>
-          <h7 className='dont'> dont click </h7>
+          
         </a>
         <i
           className={`fa ${menuActive ? 'fa-times' : 'fa-bars'}`}
