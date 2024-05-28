@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import contact1 from '../images/contact1.png';
 
-function App() {
+function App(props) {
   const schema = z.object({
     firstName: z.string().min(2).max(30),
     lastName: z.string().min(2).max(30),
@@ -28,12 +28,12 @@ function App() {
     <>
      <div className="contactHeader" id="contactHeader">
         <h5>CONTACT</h5>
-        <h1>Contact With Me</h1>
+        <h1 style={{color: props.mode ? "black" : "#6c757d"}}>Contact With Me</h1>
       </div>
     <div className="fullBody">
-    <div className="formRight">
-      <div className="valid">
-        <form className="form" onSubmit={handleSubmit(submitData)}>
+    <div className="formRight" >
+      <div className="valid" >
+        <form className="form" onSubmit={handleSubmit(submitData)} style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
           <div className="shortBox">
             <div className="fixTrial">
               <label> First Name </label>
@@ -70,7 +70,7 @@ function App() {
       </div>
 
 
-      <div className="formLeft">
+      <div className="formLeft" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             <div className="imgClass">
               <img className="formImg" src={contact1} alt="np img"></img>
             </div>

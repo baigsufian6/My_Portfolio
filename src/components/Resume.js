@@ -1,31 +1,31 @@
 import React from "react";
 
-function Resume() {
+function Resume(props) {
   return (
     <div>
       <section className="resume" id="resume">
         <h4 className="resexp">7+ YEARS OF EXPERIANCE</h4>
-        <h2 className="reshead">My Resume</h2>
+        <h2 className="reshead" style={{color: props.mode ? "#3c3e41" : "#54585f"}}>My Resume</h2>
 
         <div className="navbar2">
-          <a href="#education" className="education">
+          <a href="#education" className="education" style={{backgroundColor:props.mode ? "black" : "#ecf0f3", boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             Education
           </a>
-          <a href="#professional-skills" className="professional-skills">
+          <a href="#professional-skills" className="professional-skills" style={{backgroundColor:props.mode ? "black" : "#ecf0f3", boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             Professional Skills
           </a>
-          <a href="#experiance" className="experiance">
+          <a href="#experiance" className="experiance" style={{backgroundColor:props.mode ? "black" : "#ecf0f3", boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             Experiance
           </a>
-          <a href="#interview" className="interview">
+          <a href="#interview" className="interview" style={{backgroundColor:props.mode ? "black" : "#ecf0f3", boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             Interview
           </a>
         </div>
         <div className="boss">
           <div className="part1">
             <h5>2010 - 2024</h5>
-            <h2>Education Quality</h2>
-            <div className="part1-box">
+            <h2 style={{color: props.mode ? "#3c3e41" : "#54585f"}}>Education Quality</h2>
+            <div className="part1-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
               <div className="inner">
                 <div className="title">
                   <h3>BE in CSE (Data Science)</h3>
@@ -45,7 +45,7 @@ function Resume() {
               </p>
             </div>
 
-            <div className="part1-box">
+            <div className="part1-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
               <div className="inner">
                 <div className="title">
                   <h3>St. Joseph PUC (PCMC)</h3>
@@ -65,7 +65,7 @@ function Resume() {
               </p>
             </div>
 
-            <div className="part1-box">
+            <div className="part1-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
               <div className="inner">
                 <div className="title">
                   <h3>New Millennium School</h3>
@@ -88,11 +88,11 @@ function Resume() {
 
           <div className="part2">
             <h5>2023 - 2024</h5>
-            <h2>Job Experiance</h2>
-            <div className="part2-box">
+            <h2 style={{color: props.mode ? "#3c3e41" : "#54585f"}}>Job Experiance</h2>
+            <div className="part2-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
               <div className="inner">
                 <div className="title">
-                  <h3>Software Intern at IEEE SA</h3>
+                  <h3>Software Intern at IEEE </h3>
                   <h5> Duration (July 2023 - August 2023)</h5>
                 </div>
                 <div className="date">
@@ -109,7 +109,7 @@ function Resume() {
               </p>
             </div>
 
-            <div className="part2-box">
+            <div className="part2-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
               <div className="inner">
                 <div className="title">
                   <h3>Software Intern at HAL</h3>
@@ -129,13 +129,13 @@ function Resume() {
               </p>
             </div>
 
-            <div className="part2-box">
+            <div className="part2-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
               <div className="inner">
                 <div className="title">
                   <h3>Full Stack Intern at PayRup</h3>
                   <h5> Duration (Feb 2024 - july 2024)</h5>
                 </div>
-                <div className="date">
+                <div className="date" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
                   <h5>4.70/5</h5>
                 </div>
               </div>

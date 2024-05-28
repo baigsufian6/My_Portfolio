@@ -11,10 +11,17 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from './components/Footer';
 
 function App() {
-  const [isRotating, setIsRotating] = useState(false);
+  const [mode, setMode] = useState(false);
 
   const toggleRotation = () => {
-    setIsRotating(!isRotating);
+    if(!mode){
+      document.body.style.backgroundColor="black";
+      setMode(true)
+    }
+    else{
+      document.body.style.backgroundColor="white";
+      setMode(false)
+    }
   };
 
   return (
@@ -25,7 +32,7 @@ function App() {
           path="/"
           element={
             <>
-              <Home isRotating={isRotating} />
+              <Home mode={mode} />
               <Features />
               <Portfolio />
               <Resume />

@@ -35,15 +35,7 @@ const Navbar = (props) => {
     if (!discoActive) {
       props.toggleRotation();
       setDiscoActive(true);
-      const generateRandomColor = () => {
-        const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-        document.body.style.backgroundColor = randomColor;
-      };
-
       clearInterval(intervalId);
-      generateRandomColor();
-      const newIntervalId = setInterval(generateRandomColor, 80);
-      setIntervalId(newIntervalId);
     } else {
       stopDiscoEffect();
     }

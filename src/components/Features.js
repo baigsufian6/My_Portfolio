@@ -1,15 +1,15 @@
 import React from "react";
 
-function Features() {
+function Features(props) {
   return (
     <body>
       <section className="features" id="features">
         <h4 className="smell">FEATURES</h4>
-        <h2 className="horse">What I Do</h2>
+        <h2 className="horse" style={{color: props.mode ? "#3c3e41" : "#54585f"}}>What I Do</h2>
         <div className="features-content">
-          <div className="features-box">
+          <div className="features-box"  style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             <i className="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
+            <h3 >Web Development</h3>
             <p>
               I specialize in web
               development, crafting functional and user-friendly interfaces from
@@ -17,7 +17,7 @@ function Features() {
               online experiences, advancing technology with every keystroke.
             </p>
           </div>
-          <div className="features-box">
+          <div className="features-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             <i className="fa-brands fa-android"></i>
             <h3>APP Development</h3>
             <p>
@@ -27,7 +27,7 @@ function Features() {
               facere alias.
             </p>
           </div>
-          <div className="features-box">
+          <div className="features-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             <i className="fa-brands fa-apple"></i>
             <h3>IOS Development</h3>
             <p>
@@ -37,7 +37,7 @@ function Features() {
               facere alias.
             </p>
           </div>
-          <div className="features-box">
+          <div className="features-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             <i className="fa-brands fa-google"></i>
             <h3>Google Expert</h3>
             <p>
@@ -47,7 +47,7 @@ function Features() {
               facere alias.
             </p>
           </div>
-          <div className="features-box">
+          <div className="features-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             <i className="fa-brands fa-aws"></i>
             <h3>AWS Certification</h3>
             <p>
@@ -57,7 +57,7 @@ function Features() {
               facere alias.
             </p>
           </div>
-          <div className="features-box">
+          <div className="features-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
             <i className="fa-solid fa-cloud"></i>
             <h3>Cloud Expert</h3>
             <p>

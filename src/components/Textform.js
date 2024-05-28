@@ -35,9 +35,9 @@ export default function Textform(props) {
         <>
             <div className='container  mx-auto' style={{marginTop:'120px'}}>
             <div>
-                <h1 className="text-dark">Enter Text To Analyze</h1>
+                <h1 className="text" style={{color: props.mode ? "black" : "#6c757d"}} >Enter Text To Analyze</h1>
                 <div>
-                    <textarea className="form-control" style={{ borderWidth: '2px', borderColor: 'black'}} id="myBox" value={text} onChange={handleOnChange} rows="10"></textarea>
+                    <textarea className="form-control" style={{ borderWidth: '2.5px', borderColor:props.mode? 'black':'black'}} id="myBox" value={text} onChange={handleOnChange} rows="10"></textarea>
                     <button className="btn btn-primary my-4" onClick={handleUpClick}> UpperCase</button>
                     <button className="btn btn-warning my-4 mx-2" onClick={handleDwClick}> LowerCase</button>
                     <button className="btn btn-success my-4 mx-1" onClick={handleEmClick}>Extarct Email</button>
@@ -46,8 +46,8 @@ export default function Textform(props) {
             </div>
             <div>
 
-                <h1 className="text-dark">  Your Text Summary</h1>
-                <p className="text-dark"> charcters ={text.replace(/\s/g, '').length} And Words = {text.trim().split(/\s+/).filter(Boolean).length}</p>
+                <h1 className="text" style={{color: props.mode ? "black" : "#6c757d"}}>  Your Text Summary</h1>
+                <p className="text" style={{color: props.mode ? "black" : "#6c757d"}}> charcters ={text.replace(/\s/g, '').length} And Words = {text.trim().split(/\s+/).filter(Boolean).length}</p>
             </div>
             </div>
         </>
