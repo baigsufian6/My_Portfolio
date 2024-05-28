@@ -14,7 +14,7 @@ function Portfolio(props) {
           <h2 className="big" style={{color: props.mode ? "#3c3e41" : "#54585f"}}>My Projects</h2>
           <div className="portfolio-content">
             
-          <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
+          <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "5px 5px 6px #d1d9e6, -5px -5px 6px #ffffff"}}>
               <div className='portImg'>
                 <img src={logofullstack} alt="img no" />
               </div>
@@ -27,7 +27,7 @@ function Portfolio(props) {
               </div>
             </div>
            
-            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
+            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "5px 5px 6px #d1d9e6, -5px -5px 6px #ffffff"}}>
               <div className='portImg'>
               <img src={images} alt="img no" />
               </div>
@@ -40,7 +40,7 @@ function Portfolio(props) {
               </div>
             </div>
 
-            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
+            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "5px 5px 6px #d1d9e6, -5px -5px 6px #ffffff"}}>
             <div className='portImg'>
               <img src={portImage} alt="img no" />
               </div>
@@ -53,7 +53,7 @@ function Portfolio(props) {
               </div>
             </div>
 
-            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
+            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "5px 5px 6px #d1d9e6, -5px -5px 6px #ffffff"}}>
             <div className='portImg'>
               <img src={portfolio04} alt="img no" />
               </div>
@@ -62,7 +62,7 @@ function Portfolio(props) {
                 <p>The service provide for design</p>
               </div>
             </div>
-            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
+            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "5px 5px 6px #d1d9e6, -5px -5px 6px #ffffff"}}>
             <div className='portImg'>
               <img src={portfolio05} alt="img no" />
               </div>
@@ -71,7 +71,7 @@ function Portfolio(props) {
                 <p>The service provide for design</p>
               </div>
             </div>
-            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
+            <div className="portfolio-box" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "5px 5px 6px #d1d9e6, -5px -5px 6px #ffffff"}}>
             <div className='portImg'>
               <img src={portfolio06} alt="img no" />
               </div>

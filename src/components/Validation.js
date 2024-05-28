@@ -33,7 +33,7 @@ function App(props) {
     <div className="fullBody">
     <div className="formRight" >
       <div className="valid" >
-        <form className="form" onSubmit={handleSubmit(submitData)} style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
+        <form className="form" onSubmit={handleSubmit(submitData)} style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "5px 5px 6px #d1d9e6, -5px -5px 6px #ffffff"}}>
           <div className="shortBox">
             <div className="fixTrial">
               <label> First Name </label>
@@ -70,7 +70,7 @@ function App(props) {
       </div>
 
 
-      <div className="formLeft" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "none"}}>
+      <div className="formLeft" style={{boxShadow:props.mode ? "5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff" : "5px 5px 6px #d1d9e6, -5px -5px 6px #ffffff"}}>
             <div className="imgClass">
               <img className="formImg" src={contact1} alt="np img"></img>
             </div>
